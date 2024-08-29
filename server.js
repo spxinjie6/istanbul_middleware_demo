@@ -4,7 +4,7 @@ const express = require('express');
 const coverage = require('istanbul-middleware');
 
 console.log("DEBUG")
-coverage.hookLoader('src_im', { verbose: true });
+coverage.hookLoader('src', { verbose: true });
 
 const app = express();  
 const PORT = process.env.PORT || 3000;  
